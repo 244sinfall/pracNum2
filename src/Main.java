@@ -176,11 +176,11 @@ public class Main {
             field = getIntInput(input);
         } while (field < 1 || field > 5);
         switch (field) {
-            case 1 -> arr.get(index).setName(receiveNewFurnitureName());
-            case 2 -> arr.get(index).setMaterial(receiveNewFurnitureMaterial());
-            case 3 -> arr.get(index).setType(receiveNewFurnitureType());
-            case 4 -> arr.get(index).setSquareArea(receiveNewFurnitureSquareArea());
-            case 5 -> arr.get(index).setPrice(receiveNewFurniturePrice());
+            case 1 -> arr.get(index-1).setName(receiveNewFurnitureName());
+            case 2 -> arr.get(index-1).setMaterial(receiveNewFurnitureMaterial());
+            case 3 -> arr.get(index-1).setType(receiveNewFurnitureType());
+            case 4 -> arr.get(index-1).setSquareArea(receiveNewFurnitureSquareArea());
+            case 5 -> arr.get(index-1).setPrice(receiveNewFurniturePrice());
         }
     }
     public static void main(String[] args) {
